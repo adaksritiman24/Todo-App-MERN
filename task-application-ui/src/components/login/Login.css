@@ -1,0 +1,91 @@
+.loginpage {
+    background: rgb(57, 57, 57);
+    
+}
+.loginpage h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.loginpage > section {
+    background-color: rgb(253, 254, 253);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 22px 2px rgb(29, 29, 29);
+}
+
+.input-icons i {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.input-icons {
+    width: 100%;
+    margin: 12px 0px;
+}
+
+.username-icon{
+  
+    left: 20px;
+    top: 85px;
+}
+.password-icon{
+    left: 20px;
+    top: 161px
+}
+
+.icon {
+    padding: 10px;
+    min-width: 40px;
+    background: rgb(183, 181, 181);
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    padding-left: 70px;
+    background: #eee;
+    margin: 12px 0px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    font-size: 24px;
+}
+.input-field:focus {
+    border-bottom: 2px solid black;
+}
+
+.login-submit {
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.not-registered {
+    text-align: center;
+    font-family: arial;
+}
+.not-registered >span > b {
+    color: rgb(51, 0, 128);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.invalid-message {
+    text-align: center;
+    font-size: 18px;
+    padding: 7px;
+    font-family: helvetica;
+    color: red;
+}

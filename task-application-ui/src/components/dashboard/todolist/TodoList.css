@@ -1,0 +1,57 @@
+.todolist {
+    border: 0.5px solid rgb(83, 82, 82);
+    padding: 5px;
+    margin: 10px 0px;
+    background-color: rgb(36, 25, 26);
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.todolist:hover {
+    background-color: rgb(20,15,10);
+    transform: scale(1.02);
+}
+
+.todolist > div, button {
+    
+    margin: 5px;
+}
+.todolist > div:first-child > h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 4px;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(75, 75, 75);
+}
+.todolist > div:first-child > p  {
+    padding-top: 5px;
+    color: rgb(201, 198, 198);
+} 
+
+.todolist > div:nth-child(2) {
+    border-radius: 5px;
+    background-color: rgb(36, 4, 4);
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todolist > button {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(36, 4, 4);
+    background-color: red;
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.todolist > button:hover {
+    background-color: rgb(176, 3, 3);
+}
+
+.todolist > button> i {
+    color: white;
+}

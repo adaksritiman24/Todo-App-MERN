@@ -1,0 +1,134 @@
+.items-page-bg{
+    background-color: rgb(65, 65, 65);
+    color: rgb(243, 246, 223);
+    font-family: arial;
+}
+
+
+.items-page-bg > section {
+    margin: 17px ;
+    padding: 20px;
+    border: 0.5px solid rgb(122, 122, 122);
+    background: rgb(58, 58, 58);
+}
+
+.items-page-bg > section:first-child {
+    background-color: rgba(32, 36, 40, 0.6);
+    border-radius: 8px;
+    font-weight: normal;
+}
+
+.items-page-bg  hr {
+    color: black;
+    background-color: black;
+}
+.items-page-bg > section:first-child h2 {
+    padding: 12px 3px;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+}
+
+.items-page-bg > section:first-child p {
+
+    padding: 8px 3px;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.todo-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+}
+.todo-container > table {
+    grid-column: 2/3;
+}
+
+.items-table > thead > tr {
+    background: rgb(37, 36, 36);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 2px ;
+}
+
+.items-table th {
+    padding: 10px;
+}
+
+.items-table >tbody{
+    background-color: rgb(44, 43, 43);
+    font-size: 20px;
+}
+
+.items-table > tbody td {
+    padding: 10px;
+}
+
+.items-table input[type="checkbox"] {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.completed {
+    text-align: center;
+}
+
+
+.todo-container  form {
+    background-color: rgb(42, 41, 41);
+    padding: 15px;
+    margin-right: 13px;
+}
+.todo-container form > * {
+    display: block;
+}
+.todo-container form > textarea {
+    width: 100%;
+    background-color: rgb(71, 70, 70);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 7px;
+    font-size: 18px;
+}
+.todo-container form >p {
+    margin: 7px 0px;
+    font-size: 20px;
+    border-bottom: 0.5px solid white;
+}
+
+.todo-container input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+}
+
+.todo-container form > div {
+    padding: 7px 0px;
+}
+
+.todo-container > form button {
+    font-size: 18px;
+    border: none;
+    background-color: yellow;
+    color: black;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+.delete-btn-todo {
+    text-align: center;
+}
+
+.delete-btn-todo > button {
+    background-color: red;
+    color: white;
+    font-size: 17px;
+    padding: 8px;
+    border: none;
+    border-radius: 7px;
+    cursor:  pointer;
+}
+.delete-btn-todo > button:hover {
+    background-color: rgb(157, 6, 6);
+}

@@ -1,0 +1,17 @@
+.errorpage > section{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.errorpage > section > h2{
+    font-family: arial;
+    font-size: 50px;
+    margin-bottom: 12px;
+}
+
+.errorpage > section > p {
+    font-family: helvetica;
+    font-size: 30px;
+}

@@ -1,0 +1,73 @@
+.homepage {
+    color: white;
+
+}
+.banner {
+
+}
+
+.banner > h2 {
+    font-size: 66px;
+    text-align: center;
+    padding-top: 19px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.banner > div {
+    text-align: center;
+    margin: 10px;
+}
+
+.signup-btn {
+    font-size: 34px;
+    padding: 10px 17px;
+    border: none;
+    background-color: rgb(53, 15, 166);
+    border-radius: 10px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: rgb(36, 9, 117);
+}
+
+.card-section {
+    margin: 12px 60px;
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+
+    margin: 10px;
+    padding: 12px;
+    border-radius: 11px;
+    background-color: rgba(21, 21, 21, 0.9);
+}
+
+.card-img {
+    padding: 10px ;
+    text-align: center;
+}
+
+.card-img > img {
+    width: 140px;
+}
+
+.card-title {
+    font-size: 28px;
+    text-align: center;
+    padding: 5px 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-text {
+    text-align: center;
+    font-family: arial;
+    font-weight: 100;
+    padding: 10px;
+}
