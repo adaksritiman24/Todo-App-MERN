@@ -1,20 +1,29 @@
-import React from 'react'
-
+import React, { useState } from 'react'
 export default function TodoItem(props) {
-    const item = props.item;
-  return (
-    <tr>
-        <td>{item.description}</td>
-        <td className='completed'>
-            {item.completed? 
-                <input type="checkbox" checked={true} /> :
-                <input type="checkbox"  />
-            }
-            
-        </td>
-        <td className='delete-btn-todo'>
-            <button onClick={()=>props.deleteTodo(item._id)}>Delete</button>
-        </td>
-    </tr>
-  )
+
+    const [item, setItem] = useState(props.item);
+
+    const handleCheckBoxEvent = (event) => {
+        
+        props.updateTodo(item._id, !item.completed)
+
+        setItem(
+            {...item, completed : !item.completed}
+        )
+    }
+
+    return (
+        <tr>
+            <td>{item.description}</td>
+            <td className='completed'>
+
+                <input type="checkbox" checked={item.completed} onChange={handleCheckBoxEvent} />
+
+
+            </td>
+            <td className='delete-btn-todo'>
+                <button onClick={() => props.deleteTodo(item._id)}>Delete</button>
+            </td>
+        </tr>
+    )
 }

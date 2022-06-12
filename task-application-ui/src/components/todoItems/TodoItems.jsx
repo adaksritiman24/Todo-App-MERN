@@ -32,20 +32,19 @@ export default function TodoItems() {
       
       axios.post(URL+"/todoitems",data, {headers } )
       .then((response)=>{
-          console.log('here', response.data);
           const fetchedItems = response.data.todoitems;
         setItems(
             fetchedItems.map((item)=> <TodoItem 
                 item = {item}
                 key = {item._id}
                 deleteTodo = {deleteTodo}
+                updateTodo = {updateTodo}
             />
             )
         )
         setListName(response.data.todoList.title);
       })
       .catch(error=>{
-          console.log("Error");
           console.log(error);
       })
   }
@@ -57,7 +56,7 @@ export default function TodoItems() {
     }
     axios.delete(URL+"/todo",{headers, data} )
     .then(response=> {
-        console.log(response);
+        console.log("ok");
         fetchTodoItems();
     })
     .catch(error=> {
@@ -66,12 +65,26 @@ export default function TodoItems() {
 
   }
 
+  const updateTodo = (id, completed)=> {
+    const data = {
+        completed, 
+        listId : params._id,
+        todoId : id
+    }
+    axios.patch(URL+"/todo", data, {headers})
+    .then(response=>{
+        console.log("ok");
+    })
+    .catch(error=>{
+        console.log(error);
+    })
+  }
+
   
   const handleSubmit = (e)=> {
       e.preventDefault();
       const desc = e.target.tododesc.value;
       const completed = e.target.completed.checked;
-    console.log(desc, completed);
 
     const data = {
         listId : params._id,
@@ -81,7 +94,7 @@ export default function TodoItems() {
     
     axios.post(URL+"/todo", data, {headers} )
     .then(response=> {
-        console.log(response);
+
         fetchTodoItems();
         e.target.tododesc.value = "";
         e.target.completed.checked = false;
